@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#root {
+	background-color: darkgray;
+	padding: 20px 5px;
+}
+.logo-img {
+	width: 5%;
+	height: auto;
+	border-radius: 100%;
+	padding-right: 5px;
+}
+#logo {
+	color: goldenrod;
+}
+
+input {
+	display: inline;
+	max-width: fit-content;
+	margin: 0em;
+	padding: 0;
+}
+.btn-outline-success {
+	color: goldenrod;
+	border-color: goldenrod;
+}
+.container {
+	margin: 0, 0, 0, 20px;
+	padding: 15px 5px 15px 25px;
+	max-width: 800px;
+	height: 800px;
+	background-image: url(Canyon-photo.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	/* background-color: black; */
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#footer {
+	background-color: goldenrod;
+	padding: 3%;
+	font-size: 0.5rem;
+	text-align: center;
+}
