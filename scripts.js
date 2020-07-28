@@ -7,7 +7,7 @@ const container = document.createElement("div");
 container.setAttribute("class", "container");
 app.appendChild(container);
 
-document.getElementById("search").addEventListener("click", function (event) {
+function getImages(event) {
 	var userInput = document.getElementById("user-input").value;
 	var url =
 		"https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=e66ca1aefa9dee7abb5fcbcd4cc1189c&tags=" +
@@ -45,4 +45,14 @@ document.getElementById("search").addEventListener("click", function (event) {
 		.catch(function (err) {
 			console.warn("something went wrong", err);
 		});
-});
+}
+document.getElementById("search").addEventListener("click", getImages, false);
+document.addEventListener(
+	"keypress",
+	function (event) {
+		if (event.key === "Enter") {
+			getImages(event.key);
+		}
+	},
+	false
+);

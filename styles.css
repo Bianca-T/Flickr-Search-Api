@@ -3,6 +3,7 @@ body {
 	padding: 0;
 }
 #root {
+	height: 500px;
 	background-color: darkgray;
 	padding: 20px 5px;
 }
@@ -27,10 +28,10 @@ input {
 	border-color: goldenrod;
 }
 .container {
-	margin: 0, 0, 0, 20px;
+	margin: 25px, 0, 5px, 20px;
 	padding: 15px 5px 15px 25px;
 	max-width: 800px;
-	height: 800px;
+	height: 400px;
 	background-image: url(Canyon-photo.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
