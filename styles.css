@@ -5,7 +5,7 @@ body {
 #root {
 	height: 95%;
 	background-color: darkgray;
-	padding: 20px 5px;
+	padding: 20px 5px 75px 5px;
 }
 .logo-img {
 	width: 5%;
@@ -30,9 +30,9 @@ input {
 .container {
 	margin: auto;
 	/* margin: 25px, 0, 5px, 20px; */
-	padding: 15px 0px;
-	max-width: 900px;
-	height: 400px;
+	padding: 10px 0px;
+	max-width: 760px;
+	height: 470px;
 	background-image: url(Canyon-photo.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -40,19 +40,25 @@ input {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
+img {
+	padding: 1px;
+}
 #footer {
 	background-color: goldenrod;
 	padding: 3%;
 	font-size: 0.5rem;
 	text-align: center;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1025px) {
 	#root {
 		padding-top: 10%;
 		height: 1200px;
 	}
+	.navbar {
+		padding: 8px 0;
+	}
 	.container {
-		width: 750px;
+		width: 760px;
 		height: 750px;
 	}
 }
@@ -63,7 +69,7 @@ input {
 	.container {
 		padding: 15px 0px;
 		height: 95%;
-		width: 600px;
+		width: 610px;
 	}
 }
 @media (max-width: 450px) {
@@ -71,11 +77,14 @@ input {
 		width: auto;
 	}
 	#root {
-		height: 620px;
+		height: 575px;
 	}
 	.container {
-		width: 300px;
+		width: 310px;
 		padding: 0;
 		height: 80%;
+	}
+	#footer {
+		padding-bottom: 55px;
 	}
 }
